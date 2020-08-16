@@ -210,11 +210,12 @@ header p {
 
 header .try-free {
     width: 150px;
-    height: 50px;
+    height: 40px;
     background-color: red;
     float: left;
     margin-left: 180px;
     margin-top: 20px;
+    padding-top: 20px;
 }
 
 header .try-free h3 {
@@ -665,7 +666,6 @@ footer .informatie h2 {
     }
     nav ul li a {
         margin: 15px 30px 0 15px;
-        color: red;
     }
     .animation {
         margin-left: 100px;
@@ -699,7 +699,6 @@ footer .informatie h2 {
     }
     nav ul li a {
         margin: 15px 30px 0 5px;
-        color: green;
     }
     .animation {
         margin-left: 100px;
@@ -799,7 +798,6 @@ footer .informatie h2 {
     }
     nav ul li a {
         margin: 15px 30px 0 5px;
-        color: yellow;
     }
     .animation {
         margin-left: 100px;
@@ -949,7 +947,6 @@ footer .informatie h2 {
     }
     nav ul li a {
         margin: 5px 10px 0 5px;
-        color: blue;
     }
     .login {
         margin-right: 10px;
@@ -982,7 +979,6 @@ footer .informatie h2 {
 @media only screen and (max-width: 730px) {
     nav ul li a {
         margin: 5px 5px 0 5px;
-        color: yellow;
         font-size: 0.7em;
     }
     header .trailer-img {
@@ -1092,7 +1088,6 @@ footer .informatie h2 {
 @media only screen and (max-width: 635px) {
     nav ul li a {
         margin: 2px 2px 0 2px;
-        color: pink;
         font-size: 0.7em;
     }
     nav ul li {
@@ -1144,7 +1139,6 @@ footer .informatie h2 {
 @media only screen and (max-width: 540px) {
     nav ul li a {
         margin: 2px 2px 0 2px;
-        color: purple;
         font-size: 0.7em;
     }
     nav ul {
@@ -1198,7 +1192,6 @@ footer .informatie h2 {
 
 @media only screen and (max-width: 410px) {
     nav ul li a {
-        color: green;
         font-size: 0.5em;
         text-align: left;
     }
