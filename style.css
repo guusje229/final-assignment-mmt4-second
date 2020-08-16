@@ -1,0 +1,1376 @@
+.clear {
+    clear: both;
+}
+
+.animation {
+    background-color: black;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 35px;
+    width: 36px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.animation:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 50%;
+    height: 15px;
+    background: #000;
+    z-index: 2;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    transform: scaleX(1.5);
+}
+
+.animation:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    z-index: 3;
+    animation: animate 3.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -400%;
+    }
+}
+
+.animation span {
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 500%;
+    background: #fff;
+}
+
+.animation span:nth-child(1) {
+    background: #b00612;
+    left: 0;
+}
+
+.animation span:nth-child(2) {
+    background: #e50815;
+    left: 0;
+    z-index: 1;
+    transform-origin: top left;
+    transform: skewX(22.8deg);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+
+.animation span:nth-child(3) {
+    background: #b00612;
+    right: 0;
+}
+
+.netflix-ani h1 {
+    background-color: black;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 170px;
+    padding: 0;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav {
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    text-align: center;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    margin: 50px 50px 0 20px;
+    line-height: 150px;
+    display: inline;
+}
+
+nav ul li a {
+    margin: 50px 30px 0 0;
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Montserrat';
+    font-weight: 'regular';
+    font-size: 1em;
+}
+
+.netflix-logo {
+    background-image: url(../img/netflix\ logo@2x.png);
+    height: 60px;
+    width: 200px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.login {
+    background-image: url(../img/login\ btn@2x.png);
+    height: 50px;
+    width: 150px;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+header .trailer-img {
+    background-image: url(../img/trailer\ hero\ img@2x.png);
+    float: right;
+    height: 575px;
+    width: 750px;
+    margin-right: 0;
+    background-repeat: no-repeat;
+}
+
+.trailer-img .watch {
+    background-image: url(../img/play\ btn@2x.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 35%;
+    margin-left: 45%;
+}
+
+.trailer-img .watch p {
+    margin-left: 30%;
+    margin-top: 8%;
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+header .gradient {
+    background-color: black;
+    background-size: cover;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: left;
+    color: #ED2517;
+    font-family: 'Montserrat';
+    font-weight: 'bold';
+    font-size: 1.1em;
+    float: left;
+    margin-left: 180px;
+    margin-top: 120px;
+}
+
+header h2 {
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 'bold';
+    font-size: 2.3em;
+    float: left;
+    margin-left: 180px;
+    margin-top: 15px;
+}
+
+header p {
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 'bold';
+    font-size: 1em;
+    line-height: 1.5;
+    float: left;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+header .try-free {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    float: left;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+header .try-free h3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+main .main h2 {
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 130px;
+}
+
+main .main h3 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 2.3em;
+    font-weight: 'extra-bold';
+    letter-spacing: 2px;
+    margin-top: 30px;
+    line-height: 2em;
+}
+
+.container2 {
+    margin-right: -100px;
+}
+
+.videoContainer {
+    height: 310px;
+    width: 550px;
+    margin-top: 200px;
+    margin-right: -100px;
+    background: black;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.75);
+    float: right;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.videoContainer1 {
+    height: 270px;
+    width: 500px;
+    margin-right: 350px;
+    margin-top: -300px;
+    background: black;
+    transform: translate(-50%, -50%) scale(1.5);
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.75);
+    float: right;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.videoContainer2 {
+    height: 310px;
+    width: 550px;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 200px;
+    background: black;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.75);
+    float: right;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 300;
+}
+
+.videoContainer2 .video-js .vjs-progress-control {
+    color: red;
+}
+
+.videoContainer1.video-js .vjs-slider {
+    background-color: transparent;
+    margin-left: 10%;
+}
+
+.videoContainer2 .video-js .vjs-progress-holder .vjs-play-progress {
+    background-color: white
+}
+
+.videoContainer2.vjs-progress-holder .vjs-load-progress div {
+    background-color: white;
+}
+
+#video1 {
+    z-index: -100;
+}
+
+#video2 {
+    z-index: 9;
+    transform: scale(1.5);
+}
+
+#video3 {
+    z-index: 1;
+}
+
+.rewind {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/forward\ btn@2x.png);
+    transform: rotate(180deg);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 25%;
+    display: none;
+}
+
+.toggle {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/play\ btn@2x.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+
+.pause {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/pause@2x.png);
+    background-color: transparent;
+    background-size: contain;
+    z-index: 10;
+}
+
+.forward {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/forward\ btn@2x.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    right: 30%;
+    display: none;
+}
+
+.container2:hover .rewind {
+    display: block;
+}
+
+.container2:hover .toggle {
+    display: block;
+}
+
+.container2:hover .forward {
+    display: block;
+}
+
+main h5 {
+    text-align: center;
+    color: #4B4B4B;
+    margin-top: 600px;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main h6 {
+    height: 35px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    margin-left: 42%;
+    padding-top: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ED2517;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+footer h5 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.9em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.informatie {
+    background-color: #1A1A1A;
+}
+
+.account {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.account button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 50px 10px 50px;
+    transition: 0.3s;
+    margin: 0 50px 0 50px;
+    align-content: center;
+}
+
+button.linkjes {
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1em;
+    line-height: 2.5em;
+}
+
+.account button:hover {
+    background-color: #ddd;
+}
+
+.account button.active {
+    border-bottom: #ED2517 5px solid;
+}
+
+footer {
+    background-color: black;
+    margin-top: 100px;
+}
+
+footer .informatie {
+    height: 650px;
+    width: 750px;
+    float: left;
+    margin-left: 23%;
+}
+
+footer .informatie p {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    line-height: 3.5em;
+    color: white;
+    margin-top: 50px;
+    margin-left: 13%;
+    position: absolute;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-top: none;
+    border: none;
+}
+
+footer .informatie p strong {
+    margin-left: 235px;
+    display: inline-block;
+    position: absolute;
+    color: red;
+    text-align: left;
+}
+
+footer .informatie h1 {
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1em;
+    height: 35px;
+    width: 200px;
+    padding: 15px 10px 0 50px;
+    color: white;
+    background-color: #ED2517;
+    margin-left: 32%;
+    margin-top: 60%;
+    float: left;
+}
+
+footer .informatie h2 {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    margin-left: 22%;
+    margin-top: 50px;
+}
+
+.trigger {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin-top: 17.5%;
+    margin-left: 22.5%;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80vh;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    background-image: url(/trailer.mov);
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal .video-js .vjs-progress-control {
+    color: red;
+}
+
+.modal .video-js .vjs-tech {
+    margin-left: 10%;
+}
+
+.modal .video-js .vjs-slider {
+    background-color: transparent;
+    margin-left: 10%;
+}
+
+.modal .vjs-control-bar {
+    margin-left: 10%;
+    background-color: transparent;
+}
+
+.modal .video-js {
+    background-color: transparent;
+}
+
+.my-video2-dimensions.vjs-fluid {
+    padding-top: 55%;
+    width: 90%;
+}
+
+.video-js .vjs-play-progress:before {
+    background-color: transparent;
+}
+
+.vjs-progress-holder .vjs-slider .vjs-slider-horizontal {
+    background-color: red;
+}
+
+.vjs-control-text {
+    color: red;
+}
+
+.vjs-progress-holder .vjs-load-progress div {
+    background-color: white;
+}
+
+.video-js .vjs-progress-holder .vjs-play-progress {
+    background-color: white
+}
+
+.video-js {
+    border-bottom: transparent;
+}
+
+.video-js .vjs-big-play-button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 25%;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    size: 150%;
+    margin-top: 25%;
+}
+
+@media only screen and (max-width: 1450px) {
+    nav ul li {
+        margin: 50px 30px 0 15px;
+        line-height: 150px;
+        display: inline;
+    }
+    nav ul li a {
+        margin: 15px 30px 0 15px;
+        color: red;
+    }
+    .animation {
+        margin-left: 100px;
+        margin-top: 35px;
+    }
+    .netflix-ani h1 {
+        margin-left: 90px;
+    }
+    .netflix-logo {
+        margin-left: 200px;
+    }
+    .login {
+        margin-right: 100px;
+    }
+    header h1 {
+        margin-left: 100px;
+    }
+    header h2 {
+        margin-left: 100px;
+        font-size: 2.1em;
+    }
+    header p {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    nav ul li {
+        margin: 30px 30px 0 5px;
+        line-height: 150px;
+    }
+    nav ul li a {
+        margin: 15px 30px 0 5px;
+        color: green;
+    }
+    .animation {
+        margin-left: 100px;
+        margin-top: 35px;
+    }
+    .netflix-ani h1 {
+        margin-left: 90px;
+    }
+    .netflix-logo {
+        height: 0px;
+        width: 0px;
+    }
+    .login {
+        margin-right: 60px;
+    }
+    header .trailer-img {
+        height: 575px;
+        width: 450px;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: -350px;
+        margin-top: 190px;
+    }
+    header .try-free h3 {
+        font-size: 0.6em;
+        letter-spacing: 0.5px;
+    }
+    .trailer-img .watch {
+        margin-top: 45%;
+        margin-left: 40%;
+    }
+    .trailer-img .watch p {
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+    .trigger {
+        margin-top: 18%;
+        margin-left: 16%;
+    }
+    .videoContainer {
+        height: 217px;
+        width: 385px;
+        margin-right: -50px;
+    }
+    .videoContainer1 {
+        height: 189px;
+        width: 350px;
+        margin-right: 350px;
+        margin-top: -210px;
+    }
+    .videoContainer2 {
+        height: 217px;
+        width: 385px;
+    }
+    footer h5 {
+        letter-spacing: 1px;
+        font-size: 1.9em;
+    }
+    footer .informatie {
+        width: 570px;
+        height: 550px;
+    }
+    .account button {
+        padding: 7px 30px 10px 30px;
+        margin: 0 30px 0 30px;
+    }
+    footer .informatie p {
+        font-size: 0.9em;
+        line-height: 2.7em;
+        margin-top: 30px;
+        margin-left: 11%;
+    }
+    footer .informatie h1 {
+        font-size: 0.9em;
+        height: 35px;
+        width: 180px;
+        padding: 15px 10px 0 50px;
+        margin-left: 30%;
+        margin-top: 55%;
+    }
+    footer .informatie h2 {
+        font-size: 0.9em;
+        margin-left: 18%;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    header nav {
+        height: 100px;
+    }
+    nav ul li {
+        margin: 30px 30px 0 5px;
+        line-height: 100px;
+    }
+    nav ul li a {
+        margin: 15px 30px 0 5px;
+        color: yellow;
+    }
+    .animation {
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    .netflix-ani h1 {
+        margin-left: 90px;
+    }
+    .login {
+        margin-right: 40px;
+        margin-top: 35px;
+    }
+    header .trailer-img {
+        height: 575px;
+        width: 400px;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.5);
+        float: right;
+        margin-left: 50%;
+    }
+    header h1 {
+        margin-left: 100px;
+        font-size: 0.9em;
+    }
+    header h2 {
+        margin-left: 100px;
+        font-size: 1.8em;
+    }
+    header p {
+        margin-left: 100px;
+        font-size: 0.9em;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: -310px;
+        margin-top: 190px;
+    }
+    main .main h2 {
+        font-size: 1em;
+        letter-spacing: 2px;
+        margin-top: 110px;
+    }
+    main .main h3 {
+        font-size: 2em;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+    }
+    .videoContainer {
+        height: 151.9px;
+        width: 259.6px;
+        margin-right: 100px;
+    }
+    .videoContainer1 {
+        height: 132.3px;
+        width: 245px;
+        margin-right: 350px;
+        margin-top: -150px;
+    }
+    .videoContainer2 {
+        height: 151.9px;
+        width: 259.6px;
+    }
+    main h5 {
+        margin-top: 400px;
+        letter-spacing: 1px;
+        line-height: 1.6em;
+        font-size: 0.9em;
+    }
+    main h6 {
+        margin-left: 40%;
+        font-size: 1em;
+    }
+    .rewind {
+        width: 30px;
+        height: 30px;
+    }
+    .toggle {
+        width: 45px;
+        height: 45px;
+    }
+    .forward {
+        width: 30px;
+        height: 30px;
+        right: 25%;
+    }
+    footer h5 {
+        letter-spacing: 0.8px;
+        font-size: 1.5em;
+    }
+    footer .informatie {
+        width: 550px;
+        height: 500px;
+    }
+    .account button {
+        padding: 7px 20px 10px 20px;
+        margin: 0 20px 0 20px;
+    }
+    footer .informatie p {
+        font-size: 0.8em;
+        line-height: 2.5em;
+    }
+    footer .informatie h1 {
+        margin-left: 27%;
+        margin-top: 50%;
+    }
+    footer .informatie h2 {
+        font-size: 0.9em;
+        margin-left: 16%;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    main .main h2 {
+        font-size: 0.9em;
+        margin-top: 80px;
+    }
+    main .main h3 {
+        font-size: 1.5em;
+    }
+    .videoContainer {
+        transform: scale(0.6);
+        margin-left: 450px;
+        margin-top: 90px;
+        position: absolute;
+    }
+    .videoContainer2 {
+        transform: scale(0.6);
+        margin-left: 150px;
+        margin-top: 90px;
+        position: absolute;
+    }
+    .videoContainer1 {
+        transform: scale(0.8);
+        margin-left: 300px;
+        margin-top: 100px;
+        position: absolute !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    nav ul li {
+        margin: 10px 10px 0 5px;
+        line-height: 100px;
+    }
+    nav ul li a {
+        margin: 5px 10px 0 5px;
+        color: blue;
+    }
+    .login {
+        margin-right: 10px;
+        margin-top: 35px;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.5);
+        margin-right: -20%;
+    }
+    header h1 {
+        margin-left: 50px;
+        font-size: 0.7em;
+    }
+    header h2 {
+        margin-left: 50px;
+        font-size: 1em;
+    }
+    header p {
+        margin-left: 50px;
+        font-size: 0.7em;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: -245px;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    nav ul li a {
+        margin: 5px 5px 0 5px;
+        color: yellow;
+        font-size: 0.7em;
+    }
+    header .trailer-img {
+        height: 475px;
+        width: 200px;
+    }
+    header h1 {
+        margin-left: 10px;
+        margin-top: 40px;
+        font-size: 0.6em;
+    }
+    header h2 {
+        margin-left: -100px;
+        margin-top: 70px;
+        font-size: 0.9em;
+    }
+    header p {
+        margin-left: -170px;
+        margin-top: 140px;
+        font-size: 0.7em;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: -245px;
+        margin-top: 250px;
+    }
+    .trailer-img .watch {
+        margin-top: 65%;
+        margin-left: -50%;
+    }
+    .trigger {
+        margin-top: 21%;
+        margin-left: -15%;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.4);
+        margin-right: -40%;
+    }
+    .videoContainer {
+        transform: scale(1);
+        position: absolute;
+        margin-left: 200px;
+    }
+    .videoContainer2 {
+        transform: scale(1);
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 200px;
+        margin-right: 390px;
+        margin-bottom: 40px;
+    }
+    .videoContainer1 {
+        transform: scale(1.05);
+        position: absolute;
+        margin-top: 405px;
+        margin-left: 205px;
+    }
+    main h5 {
+        margin-top: 600px;
+        letter-spacing: 0.8px;
+        line-height: 1.5em;
+        font-size: 0.7em;
+    }
+    main h6 {
+        margin-left: 33%;
+        font-size: 1em;
+    }
+    footer h5 {
+        letter-spacing: 0.8px;
+        font-size: 1em;
+    }
+    footer .informatie {
+        width: 370px;
+        height: 350px;
+    }
+    .account button {
+        padding: 7px 10px 10px 10px;
+        margin: 0 5px 0 15px;
+    }
+    footer .informatie p {
+        font-size: 0.6em;
+        line-height: 2.2em;
+        margin-top: 10px;
+        margin-left: 11%;
+    }
+    footer .informatie p strong {
+        margin-left: 150px;
+    }
+    footer .informatie h1 {
+        font-size: 0.9em;
+        height: 30px;
+        width: 100px;
+        padding: 13px 10px 0 30px;
+        margin-left: 30%;
+        margin-top: 45%;
+        font-size: 0.6em;
+    }
+    footer .informatie h2 {
+        font-size: 0.7em;
+        margin-left: 16%;
+        margin-top: 35px;
+        letter-spacing: 0.9px;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    nav ul li a {
+        margin: 2px 2px 0 2px;
+        color: pink;
+        font-size: 0.7em;
+    }
+    nav ul li {
+        margin: 50px 5px 0 5px;
+        line-height: 100px;
+    }
+    .login {
+        margin-right: 0px;
+        margin-top: 35px;
+        width: 0px;
+        height: 0px;
+    }
+    header .trailer-img {
+        height: 375px;
+        width: 250px;
+    }
+    .trailer-img .watch {
+        margin-top: 45%;
+        margin-left: 0%;
+    }
+    .trailer-img .watch p {
+        font-size: 0.8em;
+        margin-left: 40%;
+        margin-top: 15%;
+    }
+    .trigger {
+        margin-top: 21%;
+        margin-left: 0.5%;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.4);
+        margin-right: -60%;
+    }
+    .videoContainer {
+        margin-left: 100px;
+    }
+    .videoContainer2 {
+        margin-left: 100px;
+    }
+    .videoContainer1 {
+        margin-left: 105px;
+    }
+    footer .informatie {
+        width: 350px;
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    nav ul li a {
+        margin: 2px 2px 0 2px;
+        color: purple;
+        font-size: 0.7em;
+    }
+    nav ul {
+        padding-left: 10px;
+    }
+    .animation {
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    .netflix-ani h1 {
+        margin-left: 40px;
+    }
+    header .trailer-img {
+        height: 395px;
+        width: 130px;
+    }
+    .trailer-img .watch p {
+        font-size: 0em;
+    }
+    .trailer-img .watch {
+        margin-left: 20%;
+        margin-top: 70%;
+    }
+    .trigger {
+        margin-top: 19%;
+        margin-left: 5%;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.3);
+        margin-right: -85%;
+    }
+    .videoContainer {
+        margin-left: 80px;
+    }
+    .videoContainer2 {
+        margin-left: 80px;
+    }
+    .videoContainer1 {
+        margin-left: 85px;
+    }
+    footer .informatie {
+        width: 320px;
+        margin-left: 8%;
+    }
+    footer h5 {
+        letter-spacing: 0.8px;
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    nav ul li a {
+        color: green;
+        font-size: 0.5em;
+        text-align: left;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li a {
+        text-align: left;
+    }
+    header .trailer-img {
+        width: 50px;
+    }
+    .trailer-img .watch {
+        margin-top: 450%;
+        margin-left: -180%;
+    }
+    .trigger {
+        margin-top: 62%;
+        margin-left: -24%;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.3);
+        margin-right: -110%;
+    }
+    .videoContainer {
+        margin-left: 60px;
+    }
+    .videoContainer2 {
+        margin-left: 60px;
+    }
+    .videoContainer1 {
+        margin-left: 65px;
+    }
+    main h6 {
+        margin-left: 20%;
+    }
+    button.linkjes {
+        letter-spacing: 1.5px;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    nav ul li a {
+        font-size: 0em;
+    }
+    .animation {
+        margin-left: 40%;
+        margin-top: 25px;
+    }
+    .netflix-ani h1 {
+        margin-left: 37%;
+    }
+    .trailer-img {
+        width: 0px;
+        height: 0px;
+        color: transparent;
+    }
+    .trailer-img .watch {
+        margin-top: 300%;
+        margin-left: -280%;
+        margin-bottom: 100px;
+    }
+    .trigger {
+        margin-top: 47%;
+        margin-left: -42%;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: -170px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        margin-left: 100px;
+    }
+    header h2 {
+        margin-left: 70px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    header p {
+        margin-left: 40px;
+        text-align: center;
+        margin-top: -80px;
+        font-size: 0.7em;
+    }
+    .modal-content #my-video2 {
+        transform: scale(0.3);
+        margin-right: -140%;
+    }
+    .videoContainer {
+        margin-left: 30px;
+    }
+    .videoContainer2 {
+        margin-left: 30px;
+    }
+    .videoContainer1 {
+        margin-left: 35px;
+    }
+    button.linkjes {
+        letter-spacing: 1.3px;
+        font-size: 0.7em;
+    }
+    footer .informatie {
+        width: 280px;
+        margin-left: 8%;
+    }
+    footer .informatie h1 {
+        margin-left: 25%;
+        margin-top: 55%;
+    }
+    footer .informatie h2 {
+        text-align: center;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    header h1 {
+        margin-left: 100px;
+        font-size: 0.5em;
+    }
+    header h2 {
+        margin-left: 70px;
+        font-size: 0.7em;
+    }
+    header p {
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.5em;
+    }
+    header .try-free {
+        width: 100px;
+        height: 35px;
+        margin-left: 90px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .trailer-img .watch {
+        margin-top: 380%;
+    }
+    .trigger {
+        margin-top: 63%;
+        margin-left: -44%;
+    }
+    .videoContainer {
+        margin-left: 15px;
+    }
+    .videoContainer2 {
+        margin-left: 15px;
+    }
+    .videoContainer1 {
+        margin-left: 20px;
+    }
+    footer .informatie {
+        width: 250px;
+        margin-left: 6%;
+    }
+    button.linkjes {
+        letter-spacing: 1.3px;
+        font-size: 0.5em;
+    }
+    footer .informatie p {
+        font-size: 0.5em;
+        line-height: 2em;
+        margin-left: 11%;
+    }
+    footer .informatie p strong {
+        margin-left: 120px;
+    }
+}
