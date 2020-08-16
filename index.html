@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/video.js"></script>
+
+
+
+</head>
+
+
+<body class="index">
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <header>
+        <div class="netflix-ani">
+            <div class="animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Netflix</h1>
+        </div>
+
+
+
+
+        <nav>
+            <div class="netflix-logo"></div>
+            <div class="login"></div>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="clear"></div>
+        <div class="gradient">
+
+
+            <div class="trailer-img">
+                <button class="trigger"></button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <video id="my-video2" class="video-js" height="600" controls autoplay data-setup='{}' mute>
+                     <source src="trailer_0jj5z9oU.compressed.mp4" type="video/mp4"/>
+                     
+                          </video>
+
+                    </div>
+                </div>
+
+                <div class="watch">
+                    <p>Watch trailer</p>
+                </div>
+
+            </div>
+            <h1>A Netflix original</h1>
+            <h2>Something strange is <br>happening in Hawkins </h2>
+            <p>Fusce dapibus, tellus ac cursus commodo,<br> tortor mauris condimentum nibh, ut<br> fermentum massa justo sit amet risus. Cras<br> mattis consectetur purus sit amet<br> fermentum.</p>
+
+            <div class="try-free">
+                <h3>Try free</h3>
+            </div>
+            <div class="clear"></div>
+
+
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+
+
+
+        <div class="main">
+            <h2>Stop doing stuff start watching</h2>
+            <h3>200+ of the best shows,<br> waiting to be watched</h3>
+        </div>
+
+
+
+        <div class="video-wrap">
+            <div class="container2">
+
+                <div class="videoContainer">
+                    <video class="video-js" id="video1" data-setup='{"fluid": true}' mute>
+                        <source src="cute_vekmiduw.compressed.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    <button class="toggle"></button>
+                    <button class="rewind"></button>
+                    <button class="forward"></button>
+                </div>
+            </div>
+
+
+            <div class="container2">
+
+                <div class="videoContainer2">
+                    <video class="video-js" id="video3" data-setup='{"fluid": true}' mute>
+                        <source src="horror_zZPLYHgO.compressed.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    <button class="toggle"></button>
+                    <button class="rewind"></button>
+                    <button class="forward"></button>
+                </div>
+            </div>
+            <div class="container2">
+
+                <div class="videoContainer1">
+                    <video class="video-js" id="video2" data-setup='{"fluid": true}' mute>
+                        <source src="sci-fi_3dAXkp8p.compressed.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    <button class="toggle"></button>
+                    <button class="rewind"></button>
+                    <button class="forward"></button>
+                </div>
+            </div>
+
+        </div>
+        <h5>Fusce dapibus, tellus ac cursus commodo, tortor mauris<br> condimentum nibh, ut fermentum massa justo sit amet risus. Cras<br> mattis consectetur purus sit amet fermentum.</h3>
+            <h6>try free</h4>
+                <div class="clear"></div>
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <h5>Choose the plan that’s right for you</h5>
+
+        <div class="account">
+            <button class="linkjes" onclick="NetflixAccount(event, 'Basic')">Basic</button>
+            <button class="linkjes" onclick="NetflixAccount(event, 'Standard')">Standard</button>
+            <button class="linkjes" onclick="NetflixAccount(event, 'Premium')">Premium</button>
+        </div>
+
+
+        <div id="Basic" class="informatie">
+            <p>Monthly price <br>Video Quality<br>Resolution<br> Screens<br>Unlimited flims an TV<br>Cancel at any time</p>
+            <p><strong>€9,99<br>HD<br> 2K+HDR<br> 2<br>X<br>X</strong></p>
+            <h1>pick this plan</h1>
+            <h2>downgrade or upgrade at any time</h2>
+        </div>
+        <div class="clear"></div>
+
+        <div id="Standard" class="informatie">
+            <p>Monthly price <br>Video Quality<br>Resolution<br> Screens<br>Unlimited flims an TV<br>Cancel at any time</p>
+            <p><strong>€12,99<br>Normal<br> 3K+HDR<br> 3<br>✓<br>X</strong></p>
+            <h1>pick this plan</h1>
+            <h2>downgrade or upgrade at any time</h2>
+
+        </div>
+        <div class="clear"></div>
+
+        <div id="Premium" class="informatie">
+            <p>Monthly price <br>Video Quality<br>Resolution<br> Screens<br>Unlimited flims an TV<br>Cancel at any time</p>
+            <p><strong>€13,99<br>Best<br> 4K+HDR<br> 4<br>✓<br>✓</strong></p>
+
+            <h1>pick this plan</h1>
+            <h2>downgrade or upgrade at any time</h2>
+        </div>
+        <div class="clear"></div>
+
+
+
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>
